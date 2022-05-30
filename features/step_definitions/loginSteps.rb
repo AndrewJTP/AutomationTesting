@@ -3,7 +3,7 @@ Given('I am located on the homepage of StartApp') do
     visit 'https://testing-start.web.app/'
   end
 
-Given('I click the {string} button') do |string|
+Given('I press the {string} button') do |string|
     click_on(string)
     sleep 1
 end
