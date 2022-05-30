@@ -5,9 +5,9 @@ Feature: Login user
 
 Scenario: Login as a Coreteam        
 	Given I am located on the homepage of StartApp
-		And I click on the "Iniciar Sesión" button
+        And I click the "Iniciar Sesión" button
 	When I fill the email with "coreteam@gmail.com"
 		And the password with "123456"
-		And click on the "INICIAR SESION" button
-	Then if I click on "Cuenta" i should see the username "Core Team"
-    	And "coreteam" role
+		And press the "Iniciar Sesión" button
+	Then if I press on "Cuenta" i should see the username "Core Team"
+    	And "core team" role
