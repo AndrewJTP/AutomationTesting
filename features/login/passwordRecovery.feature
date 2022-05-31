@@ -1,7 +1,7 @@
-Feature: password Recovery
-        As a volunteer
-        I want to recover my password
-        so i test that the password recovery function works correctly
+Feature: 	password Recovery
+       	 	As a volunteer
+        	I want to recover my password
+        	so i test that the password recovery function works correctly
 
 Scenario: password recovery
     Given I am located on the homepage of StartApp

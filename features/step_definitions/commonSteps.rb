@@ -6,7 +6,6 @@ Given('I click the {string} button') do |string|
     click_on(string)
     sleep 1
 end
-
 When('I fill the email with {string}') do |string|
     fill_in 'email', with: string
 end
