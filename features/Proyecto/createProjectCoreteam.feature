@@ -3,7 +3,7 @@ As an user whit the coreteam role
 I want to create a new project
 so I will check that the project creation works correctly
 
-@newProjectTests
+@maximize
 Scenario: Create a new project
 	Given I am located on the homepage of StartApp
         And I click the "Iniciar Sesión" button

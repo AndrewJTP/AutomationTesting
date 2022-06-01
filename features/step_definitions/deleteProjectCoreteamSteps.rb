@@ -8,7 +8,7 @@ end
 
 When('confirm delete pressing {string}') do |nameButton|
   click_on('eliminarproyecto1')
-  sleep 3
+  sleep 1
 end
 
 Then('the number of projects should be reduced by 1') do
@@ -17,5 +17,5 @@ Then('the number of projects should be reduced by 1') do
   if numberOfProjectsBeforeDelete != numberOfProjectsAfterDelete
         raise "The number of projects should be "+ numberOfProjectsBeforeDelete  
   end
-  sleep 3
+  sleep 1
 end

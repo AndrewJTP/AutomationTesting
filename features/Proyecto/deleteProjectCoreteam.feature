@@ -3,7 +3,7 @@ As an user with the coreteam role
 I want to delete an existing project
 so I will check that the project delete works correctly
 
-@deleteProjectTests
+@maximize
 Scenario: Delete a joined project
 	Given I am located on the homepage of StartApp
         And I click the "Iniciar Sesión" button

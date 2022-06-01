@@ -3,6 +3,8 @@ Feature: 	password Recovery
         	I want to recover my password
         	so i test that the password recovery function works correctly
 
+
+@maximize
 Scenario: password recovery
     Given I am located on the homepage of StartApp
     And I click the "Iniciar Sesión" button
