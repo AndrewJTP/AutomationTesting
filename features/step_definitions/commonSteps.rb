@@ -22,5 +22,5 @@ end
 
 When('press the {string} button') do |nameButton|
   click_on(nameButton)
-  sleep 1
+  sleep 3
 end
