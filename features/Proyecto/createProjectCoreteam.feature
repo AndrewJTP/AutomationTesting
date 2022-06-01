@@ -15,15 +15,15 @@ Scenario: Create a new project
     	And I fill the next fields with the following
         | fecha_inicio          | 10102022                             | 
         | fecha_fin             | 10112022                             |
-        | titulo                | Proyecto CPTA                        | 
+        | titulo                | ProyectinAAC                      | 
         | descripcion           | esto es una descripcion              |
         | objetivo              | entonces esto es un objetivo no?     |	  
         And I click on "crearProyecto1" button
     Then I see the card "Medio Ambiente" and click on it
-        And click in the project card "Proyecto CPTA"
+        And click in the project card "ProyectinAAC"
         And I should see my project on the list of projects with the following information
         | fecha_inicio          | 2022-10-10                             | 
         | fecha_fin             | 2022-10-11                             |
-        | titulo                | Proyecto CPTA                                   | 
+        | titulo                | ProyectinAAC                                   | 
         | descripcion           | esto es una descripcion                |
         | objetivo              | entonces esto es un objetivo no?       |      
