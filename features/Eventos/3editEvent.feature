@@ -23,11 +23,3 @@ Scenario: Edit an existing event
     |  nombre_evento        | PruebaEventoEdited | 
     |  descripcion_evento   | esto es una descripcion editada  |	  
     |  lugar_evento         | La paz  |
-
-#Scenario: Edit an existing event with nothing in name field
-#Given I press on "Eventos" tab
-#When I click in the event card "PruebaEventoCoreteam" button
-#    And I click in the edit event button "Editar"
-#    And I put the name field with nothing  
-#    And I click on save event "Guardar Cambios" button
-#   Then i should see the message in snakbar "La fecha y el nombre del evento no pueden ser vacios"

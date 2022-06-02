@@ -20,6 +20,12 @@ Scenario: join a existing project of a individual project
 
 @maximize
 Scenario: unjoin a existing project of a individual project
+    Given click in the project card "potatochip"
+    When I click the "Dejar Proyecto" button
+    Then i should see the message "Participacion cancelada"
+
+@maximize
+Scenario: join and unjoin a existing project of a individual project
     Given click in the project card "potatochip2"
     When I click the "Unirme" button
         And I click the "Dejar Proyecto" button
