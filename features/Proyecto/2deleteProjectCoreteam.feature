@@ -11,10 +11,10 @@ Scenario: Delete a joined project
         And the password with "123456"
         And press the "Iniciar Sesión" button
         And I press on "Proyectos" tab
-        And I see the card "Medio Ambiente" and click on it
-        And click in the project card "proyectinaac"
+        And I see the card "Empoderamiento" and click on it
+        And click in the project card "papa"
         And I click the "Unirme" button
     When I click the "Eliminar" button
         And confirm delete pressing "eliminar"
-    Then I see the card "Medio Ambiente" and click on it
+    Then I see the card "Empoderamiento" and click on it
         And the number of projects should be reduced by 1

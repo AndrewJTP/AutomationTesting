@@ -1,7 +1,3 @@
-When('I click on {string} button') do |string|
-    click_on(string)
-end
-    
 When('I fill the next events fields with the following') do |table|
     data = table.rows_hash
     data.each_pair do |key, value|
