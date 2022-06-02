@@ -10,17 +10,17 @@ Background:
         And the password with "123456"
         And press the "Iniciar Sesión" button
         And I press on "Proyectos" tab
-        And I see the card "Medio Ambiente" and click on it
+        And I see the card "Empoderamiento" and click on it
 
 @maximize
 Scenario: join a existing project of a individual project
-    Given click in the project card "participacionAAC"
+    Given click in the project card "potatochip"
     When I click the "Unirme" button
     Then i should see the message "Participacion exitosa"
 
 @maximize
 Scenario: unjoin a existing project of a individual project
-    Given click in the project card "dejarParticipacionAAC"
+    Given click in the project card "potatochip2"
     When I click the "Unirme" button
         And I click the "Dejar Proyecto" button
     Then i should see the message "Participacion cancelada"
