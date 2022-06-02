@@ -4,13 +4,9 @@ I want to delete an existing project
 so I will check that the project delete works correctly
 
 @maximize
+@loginWithCoreteam
 Scenario: Delete a joined project
-	Given I am located on the homepage of StartApp
-        And I click the "Iniciar Sesión" button
-    	And I fill the email with "coreteam@gmail.com"
-        And the password with "123456"
-        And press the "Iniciar Sesión" button
-        And I press on "Proyectos" tab
+	Given I press on "Proyectos" tab
         And I see the card "Empoderamiento" and click on it
         And click in the project card "papa"
         And I click the "Unirme" button

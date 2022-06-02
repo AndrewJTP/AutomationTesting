@@ -7,8 +7,8 @@ Before '@maximize' do
   page.driver.browser.manage.window.maximize
 end
 
-Before '@prueba' do
-  iniciarSesion
+Before '@loginWithCoreteam' do
+  loginCoreteam
 end
 
 After '@deleteProject' do 
