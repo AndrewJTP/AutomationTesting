@@ -21,12 +21,12 @@ When('I fill the next fields with the following') do |table|
   sleep 1
 end
 
-When('I click on the scroll {string}') do |string|
+When('I click on the scroll {string}') do |scrollField|
   find(:xpath, '/html/body/div[2]/div[3]/form/div[2]/div[7]/div/div/div/div').click
   find(:xpath, '//*[@id="menu-"]/div[3]/ul/li[4]').click
 end
 
-Then('I see the card {string} and click on it') do |string|
+Then('I see the card {string} and click on it') do |nameCard|
   sleep 3
   find(:xpath, '//*[@id="root"]/div[2]/div[1]/div/div[2]/div/div[4]/div/div/a/button/div').click
 end
