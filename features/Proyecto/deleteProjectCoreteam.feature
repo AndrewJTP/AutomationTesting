@@ -12,7 +12,7 @@ Scenario: Delete a joined project
         And press the "Iniciar Sesión" button
         And I press on "Proyectos" tab
         And I see the card "Medio Ambiente" and click on it
-        And click in the project card "as"
+        And click in the project card "proyectinaac"
         And I click the "Unirme" button
     When I click the "Eliminar" button
         And confirm delete pressing "eliminar"
