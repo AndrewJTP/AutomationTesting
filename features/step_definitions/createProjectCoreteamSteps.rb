@@ -18,4 +18,35 @@ When('I fill the next fields with the following') do |table|
         fill_in 'objetivo', :with => value	 	  
     end 
   end
+  sleep 1
+end
+
+Then('I see the card {string} and click on it') do |string|
+  find(:xpath, '//*[@id="root"]/div[2]/div[1]/div/div[2]/div/div[1]/div/div/a/button/div').click
+  sleep 1
+end
+
+Then('click in the project card {string}') do |nameOfProject|
+  nameProject='[name=detalle' + nameOfProject + ']'
+  find(nameProject).click
+  sleep 3
+end
+
+Then('I should see my project on the list of projects with the following information') do |table|
+  data = table.rows_hash
+  data.each_pair do |key, value|
+    case key
+      when "fecha_inicio"
+        expect(page).to have_selector('p', text: value) 
+      when "fecha_fin"
+        expect(page).to have_selector('p', text: value)
+      when "titulo"
+        expect(page).to have_selector('h1', text: value)
+      when "descripcion"
+        expect(page).to have_selector('p', text: value)
+      when "objetivo"
+        expect(page).to have_selector('p', text: value)
+    end 
+  end
+  sleep 6
 end
