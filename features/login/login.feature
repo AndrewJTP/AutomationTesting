@@ -3,7 +3,7 @@ Feature: Login of User
 		I want to login to the Start App Americas Together
 		so i test that the login works correctly
 
-@loginTests
+@maximize
 Scenario: Login as a <userRol>        
 	Given I am located on the homepage of StartApp
         And I click the "Iniciar Sesión" button
