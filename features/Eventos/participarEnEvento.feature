@@ -12,4 +12,4 @@ Scenario: participate an existing event
         And press the "Iniciar Sesión" button
         And I press on "Eventos" tab
     When I click in "PruebaEventoCoreteam" participation button
-    
+    Then i should see the message in snakbar "Tu participación en el evento ha sido registrada"

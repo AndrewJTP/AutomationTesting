@@ -42,3 +42,6 @@ Then('I should see my event edited with the following information') do |table|
     end
     sleep 6
 end
+When('I put the name field with nothing') do
+    fill_in 'nombre_evento', :with => " "
+end
