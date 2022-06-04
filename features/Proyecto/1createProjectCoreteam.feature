@@ -26,8 +26,6 @@ Scenario: Create a new project
     Then I see the card "Empoderamiento" and click on it
         And click in the project card "papa"
         And I should see my project on the list of projects with the following information
-        | fecha_inicio          | 2022-10-10                             | 
-        | fecha_fin             | 2022-10-11                             |
         | titulo                | papa                                   | 
         | descripcion           | esto es una descripcion                |
         | objetivo              | entonces esto es un objetivo no?       |
@@ -47,8 +45,6 @@ Scenario: Create a new project and delete with hooks
     Then I see the card "Empoderamiento" and click on it
         And click in the project card "papaneitor"
         And I should see my project on the list of projects with the following information
-        | fecha_inicio          | 2022-10-10                             | 
-        | fecha_fin             | 2022-10-11                             |
         | titulo                | papaneitor                                   | 
         | descripcion           | esto es una descripcion                |
         | objetivo              | entonces esto es un objetivo no?       |      

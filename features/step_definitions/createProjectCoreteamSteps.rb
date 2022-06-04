@@ -27,8 +27,8 @@ When('I click on the scroll {string}') do |string|
 end
 
 Then('I see the card {string} and click on it') do |string|
+  sleep 3
   find(:xpath, '//*[@id="root"]/div[2]/div[1]/div/div[2]/div/div[4]/div/div/a/button/div').click
-  sleep 1
 end
 
 Then('click in the project card {string}') do |nameOfProject|
@@ -41,10 +41,6 @@ Then('I should see my project on the list of projects with the following informa
   data = table.rows_hash
   data.each_pair do |key, value|
     case key
-      when "fecha_inicio"
-        expect(page).to have_selector('p', text: value) 
-      when "fecha_fin"
-        expect(page).to have_selector('p', text: value)
       when "titulo"
         expect(page).to have_selector('h1', text: value)
       when "descripcion"

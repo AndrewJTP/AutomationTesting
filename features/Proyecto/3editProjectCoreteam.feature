@@ -24,8 +24,6 @@ Scenario: edit a project 1
         And I click on "GUARDAR CAMBIOS" button
     Then click in the project card "BonoJuansito"
         And I should see my project on the list of projects with the following information
-        | fecha_inicio          | 2022-11-11                             | 
-        | fecha_fin             | 2022-12-12                             |
         | titulo                | BonoJuansito                           | 
         | descripcion           | esto es una descripcion                |
         | objetivo              | entonces esto es un objetivo no?       |
@@ -40,10 +38,8 @@ Scenario: edit a project 2
         | descripcion           | esto es una descripcion              |
         | objetivo              | entonces esto es un objetivo no?     |
         And I click on "GUARDAR CAMBIOS" button
-    Then click in the project card "BonoJuansito"
+    Then click in the project card "Juansitopinto"
         And I should see my project on the list of projects with the following information
-        | fecha_inicio          | 2022-10-10                             | 
-        | fecha_fin             | 2022-11-11                             |
         | titulo                | Juansitopinto                           | 
         | descripcion           | esto es una descripcion                |
         | objetivo              | entonces esto es un objetivo no?       |

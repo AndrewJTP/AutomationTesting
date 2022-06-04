@@ -5,4 +5,5 @@ When('I click in {string} participation button') do |nameOfEvent|
 end
 Then('i should see the message in snakbar {string}') do |string|
     expect(page).to have_selector('div', text: string)
+    sleep 3
 end
