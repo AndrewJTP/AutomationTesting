@@ -1,8 +1,14 @@
-When('I click on {string} button') do |string|
-    click_on(string)
+Then('I click in the event card {string} button') do |nameOfEvent|
+    nameOfEvent='[name=Detalles_' + nameOfEvent + ']'
+    find(nameOfEvent).click
+    sleep 3
 end
-    
-When('I fill the next events fields with the following') do |table|
+
+When('I click in the edit event button {string}') do |editButton|
+    click_on('Editar')
+    sleep 2
+end
+When('I fill the edit events fields with the following') do |table|
     data = table.rows_hash
     data.each_pair do |key, value|
         case key
@@ -18,17 +24,11 @@ When('I fill the next events fields with the following') do |table|
     end
 end
 
-When('I click on event {string} button') do |nameButton|
+When('I click on save event {string} button') do |nameButton|
     click_on(nameButton)
-    sleep 5
-end
-Then('I click in the event card {string}') do |nameOfEvent|
-    nameOfEvent='[name=Detalles_' + nameOfEvent + ']'
-    find(nameOfEvent).click
     sleep 3
 end
-
-Then('I should see my event on the list of events with the following information') do |table|
+Then('I should see my event edited with the following information') do |table|
     data = table.rows_hash
     data.each_pair do |key, value|
       case key
