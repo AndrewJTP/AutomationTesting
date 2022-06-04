@@ -1,5 +1,6 @@
 Given('I am located on the homepage of StartApp') do
     visit 'https://testing-start.web.app/'
+    sleep 1
   end
 Given('I click the {string} button') do |nameButton|
     click_on(nameButton)
