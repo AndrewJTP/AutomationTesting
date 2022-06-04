@@ -23,12 +23,12 @@ When('I change my data in the form to Edit my profile') do |table|
             fill_in 'descripcion_personal', :with => value	
       end 
     end
-  end
+end
 
 When('I erase the career field') do
     fill_in 'carrera', :with => ""	 
 end
-
-Then('a message that says {string} appears on screen') do |confirmationMessage|
-    expect(page).to have_selector('div', text: confirmationMessage)
+Then('I should press the "Editar Perfil" button and see the change on career {string}') do |career|
+  find(:xpath, "/html/body/div/div[2]/div[1]/div/div/div/div[2]").click
+  page.should have_field('carrera', with: career)
 end
