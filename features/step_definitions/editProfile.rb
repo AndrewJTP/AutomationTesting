@@ -26,7 +26,7 @@ When('I change my data in the form to Edit my profile') do |table|
   end
 
 When('I erase the career field') do
-    fill_in 'carrera', :with => " "	 
+    fill_in 'carrera', :with => ""	 
 end
 
 Then('a message that says {string} appears on screen') do |confirmationMessage|
