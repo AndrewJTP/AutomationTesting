@@ -23,3 +23,10 @@ Scenario: Edit my profile
 		| Mi pequeña descripción |  Me gusta leer |
     When press the "Guardar Cambios" button
     Then a message that says "Se Actualizo correctamente!" appears on screen
+
+Scenario: Edit my profile with a blank space in career
+    Given I click the "Cuenta" button
+    And I click on "Editar Perfil"
+    And I erase the career field
+    When press the "Guardar Cambios" button
+    Then a message that says "Se Actualizo correctamente!" appears on screen
