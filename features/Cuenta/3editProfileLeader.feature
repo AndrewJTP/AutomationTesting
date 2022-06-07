@@ -22,11 +22,21 @@ Scenario: Edit my profile
 		| Número de contacto de emergencia | 78865486 |
 		| Mi pequeña descripción |  Me gusta leer |
     When press the "Guardar Cambios" button
-    Then I should press the "Editar Perfil" button and see the change on career "Abogado" 
+    Then I should press the "Editar Perfil" button 
+    And see the changes
+    	| Profesion u oficio | Abogado |
+		| Ciudad de residencia | La Paz |
+		| Genero | Masculino |
+		| Nombre de contacto de emergencia | pepito gustavo |
+		| Relación con contacto de emergencia | Hermano |
+		| Número de contacto de emergencia | 78865486 |
+		| Mi pequeña descripción |  Me gusta leer |
 
 Scenario: Edit my profile with a blank space in career
     Given I click the "Cuenta" button
     And I click on "Editar Perfil"
     And I erase the career field
     When press the "Guardar Cambios" button
-    Then I should press the "Editar Perfil" button and see the change on career "" 
+    Then I should press the "Editar Perfil" button 
+    And see the changes
+        | Profesion u oficio | |
